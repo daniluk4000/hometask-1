@@ -68,6 +68,7 @@
                 владелец регистрации доменного имени может его обновить или отказаться от этого имени, дождавшись
                 окончания срока действия.</p>
         </div>
+
         <div id="accordion" class="mt-3">
             <div class="card mb-3">
                 <div class="card-header" id="headingOne">
@@ -163,6 +164,30 @@
             </div>
         </div>
     </section>
+
+    <section id="auth" class="container mt-4 p-3">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">Вход на сайт</button>
+
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="loginModalLabel">Авторизация на сайте</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Форма авторизации -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="scheme" class="container mt-4 border-top p-3">
         <h2>Рекурсивная и нерекурсивная схемы</h2>
         <p>Существует две основные схемы разрешения DNS-имен. В первом варианте работу по поиску IP-адреса координирует
@@ -216,6 +241,6 @@
     <p class="mb-0">Сайт создан Данилой Родичкиным | Дата генерации CSS: <?php echo date('d.m.Y', filemtime('styles.css')); ?> | версия BootStrap: </p>
 </footer>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script type="text/javascript" src="../../bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../../bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
