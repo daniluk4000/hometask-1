@@ -19,6 +19,30 @@
 </nav>
 <main class="mt-4">
     <section id="dns" class="container">
+
+        <div id="carousel" class="carousel slide mb-4" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="slider1.jpeg" alt="DNS 1">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="slider2.jpg" alt="DNS 2">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Назад</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Далее</span>
+            </a>
+        </div>
+
         <h2>О системе доменных имен</h2>
         <div class="row mt-3">
             <div class="col-md-8">
