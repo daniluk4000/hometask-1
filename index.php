@@ -166,19 +166,30 @@
     </section>
 
     <section id="auth" class="container mt-4 p-3">
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">Вход на сайт</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">Регистрация/вход на сайт</button>
 
         <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="loginModalLabel">Авторизация на сайте</h5>
+                        <h5 class="modal-title" id="loginModalLabel">Регистрация на сайте</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        <!-- Форма авторизации -->
+                        <small class="mb-2 d-block">Если у вас уже есть аккаунт, введите свои данные</small>
+                        <form method="POST">
+                            <div class="form-group">
+                                <label for="InputEmail">Ваша почта</label>
+                                <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Введите адрес почты..." required>
+                            </div>
+                            <div class="form-group">
+                                <label for="InputPassword">Желаемый пароль</label>
+                                <input type="password" class="form-control" id="InputPassword" placeholder="Введите пароль..." required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Регистрация/Вход</button>
+                        </form>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
